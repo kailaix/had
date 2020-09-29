@@ -39,8 +39,7 @@
 #include <cmath>
 #ifdef WIN32
 #define threadDefine thread_local
-#endif
-#ifdef __unix
+#else
 #define USE_AATREE
 #define threadDefine __thread
 #endif
